@@ -42,7 +42,7 @@ public class BlockUtilTest {
   @Test
   public void testBlockUtil() {
     //test create GenesisBlockCapsule
-    BlockCapsule blockCapsule1 = BlockUtil.newGenesisBlockCapsule();
+    BlockCapsule blockCapsule1 = BlockUtil.newGenesisBlockCapsule(Args.getInstance());
     Sha256Hash sha256Hash = Sha256Hash.wrap(ByteArray
         .fromHexString("0x0000000000000000000000000000000000000000000000000000000000000000"));
 

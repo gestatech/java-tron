@@ -171,7 +171,7 @@ public class Manager {
    * init genesis block.
    */
   public void initGenesis() {
-    genesisBlock = BlockUtil.newGenesisBlockCapsule();
+    genesisBlock = BlockUtil.newGenesisBlockCapsule(Args.getInstance());
     if (containBlock(genesisBlock.getBlockId())) {
       Args.getInstance().setChainId(genesisBlock.getBlockId().toString());
     } else {
